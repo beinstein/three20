@@ -615,7 +615,7 @@
 - (TTStyle*)launcherButtonImage:(UIControlState)state {
   TTStyle* style =
     [TTBoxStyle styleWithMargin:UIEdgeInsetsMake(-7, 0, 11, 0) next:
-    [TTShapeStyle styleWithShape:[TTRoundedRectangleShape shapeWithRadius:8] next:
+    [TTShapeStyle styleWithShape:[TTRectangleShape shape] next:
     [TTImageStyle styleWithImageURL:nil defaultImage:nil contentMode:UIViewContentModeCenter
                   size:CGSizeZero next:nil]]];
 
