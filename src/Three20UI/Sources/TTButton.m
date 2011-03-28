@@ -404,6 +404,19 @@ static const CGFloat kVPadding = 7;
   [self setNeedsDisplay];
 }
 
+//// ADDED FOR UNITY
+- (UIImage*)UIImageForState:(UIControlState)state {
+	 return [self contentForState:state].image;
+}
+
+- (void)setUIImage:(UIImage*)image forState:(UIControlState)state {
+	TTButtonContent* content = [self contentForState:state];
+	content.delegate = self.imageDelegate;
+	content.image = image;
+	[self setNeedsDisplay];
+}
+//////
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (TTStyle*)styleForState:(UIControlState)state {

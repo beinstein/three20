@@ -42,6 +42,9 @@
 - (NSString*)imageForState:(UIControlState)state;
 - (void)setImage:(NSString*)imageURL forState:(UIControlState)state;
 
+- (UIImage*)UIImageForState:(UIControlState)state;
+- (void)setUIImage:(UIImage*)image forState:(UIControlState)state;
+
 - (TTStyle*)styleForState:(UIControlState)state;
 - (void)setStyle:(TTStyle*)style forState:(UIControlState)state;
 
