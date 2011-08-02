@@ -708,7 +708,7 @@
 			buildSettings = {
 				ARCHS = (
 					armv6,
-					armv7,
+					"$(ARCHS_STANDARD_32_BIT)",
 				);
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -745,7 +745,7 @@
 			buildSettings = {
 				ARCHS = (
 					armv6,
-					armv7,
+					"$(ARCHS_STANDARD_32_BIT)",
 				);
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -762,7 +762,7 @@
 			buildSettings = {
 				ARCHS = (
 					armv6,
-					armv7,
+					"$(ARCHS_STANDARD_32_BIT)",
 				);
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
